@@ -1,6 +1,4 @@
-﻿http://localhost:15698/api/customer
-
-(function ($, doc) {
+﻿(function ($, doc) {
     'use strict';
 
     var app = (function () {

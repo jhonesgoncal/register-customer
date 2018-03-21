@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Cadastro de Cliente</h1>
+
+<form data-js="form-customer">
+    <div class="form-group">
+        <label for="name">Nome: </label>
+        <input type="text" class="form-control" id="name" placeholder="Nome" data-js="name">
+    </div>
+    <div class="form-group">
+        <label for="lastname">Sobrenome: </label>
+        <input type="text" class="form-control" id="lastname" placeholder="Sobrenome" data-js="lastName">
+    </div>
+    <div class="form-group">
+        <label for="age">Idade: </label>
+        <input type="number" class="form-control" id="age" placeholder="Idade" data-js="age">
+    </div>
+    <button type="submit" class="btn btn-default">Cadastrar</button>
+</form>
+<br />
+<div data-js="errors">
+    <ul data-js="list-errors"></ul>
+</div>
+
+
+<h1>Lista de Clientes</h1>
+<table class="table table-hover">
+    <thead>
+    <th>Nome</th>
+    <th>Sobrenome</th>
+    <th>Idade</th>
+    </thead>
+    <tbody data-js="table-customers"></tbody>
+</table>
